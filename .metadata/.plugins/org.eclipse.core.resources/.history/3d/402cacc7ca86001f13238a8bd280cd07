@@ -1,0 +1,5 @@
+package com.SecurityLoginNCSCM.Security.Login.SecurityRepository;
+
+public interface SigninRepository {
+
+}

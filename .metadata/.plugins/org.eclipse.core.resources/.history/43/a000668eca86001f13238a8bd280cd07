@@ -1,0 +1,5 @@
+package com.SecurityLoginNCSCM.Security.Login.SecurityModel;
+
+public class SigninEntity {
+
+}

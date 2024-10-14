@@ -1,0 +1,19 @@
+package com.SecurityLoginNCSCM.Security.Login.SecurityService;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.SecurityLoginNCSCM.Security.Login.SecurityModel.SigninEntity;
+import com.SecurityLoginNCSCM.Security.Login.SecurityRepository.SigninRepository;
+
+@Service
+public class SecurityService {
+
+	@Autowired
+	SigninRepository signinRepository;
+	
+	public SigninEntity createUser(SigninEntity signinEntity) {
+		return signinRepository.save(signinEntity);
+	}
+
+}
